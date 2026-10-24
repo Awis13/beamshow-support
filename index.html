@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beamshow support</title>
+<style>
+  :root { color-scheme: light dark; --bg:#fff; --fg:#1b1b1f; --mute:#62626b; --link:#3a5bd9; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16161a; --fg:#ececf1; --mute:#a0a0ab; --link:#8ea4ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 -apple-system, system-ui, sans-serif; }
+  main { max-width: 38rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  p, li { color: var(--fg); } .mute { color: var(--mute); } a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Beamshow</h1>
+  <p class="mute">Make a custom light show for your car from any song, edit it on a timeline and put it on a USB drive.</p>
+
+  <h2>Support</h2>
+  <p>Questions, bug reports or a show that does not play in the car: open an issue at
+     <a href="https://github.com/Awis13/beamshow-support/issues">github.com/Awis13/beamshow-support/issues</a>.
+     Please include your device, the app version, the car model and its software version.</p>
+
+  <h2>Getting a show into the car</h2>
+  <ul>
+    <li>Use a USB drive formatted as exFAT or FAT32 (ext3 and ext4 work too). NTFS, APFS and Mac OS Extended do not.</li>
+    <li>Do not use the dashcam drive: a drive with a TeslaCam folder is not offered for Light Show.</li>
+    <li>In the app, choose Send to Drive and pick the drive itself, not a folder on it. The app writes a LightShow folder at the top of the drive and reads every file back to check it.</li>
+    <li>On a Mac, the first time you use a drive the app asks you to open it once in a file dialog, so it may write to it.</li>
+    <li>In the car: park, plug the drive into a front USB port, open Toybox, then Light Show, and tap Schedule Show.</li>
+  </ul>
+  <p class="mute">Beamshow is an independent app. It is not affiliated with, endorsed by or sponsored by Tesla, Inc. Tesla is a trademark of Tesla, Inc. and is used only to say which cars the shows are for.</p>
+
+  <h2>Privacy</h2>
+  <p><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
